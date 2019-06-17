@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  master:
+    image: mpi
+    ports:
+      - "4000:22"
+
+  worker:
+    image: mpi
+    deploy:
+      replicas: 3
